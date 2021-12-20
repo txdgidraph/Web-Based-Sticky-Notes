@@ -1,0 +1,17 @@
+.mainBody{
+    background-color: #243640;
+}
+.wbstn-navbar{
+    background-color: white;
+}
+.buttonCreate{
+    margin: 2 0 2 0;
+}
+#notesBody{
+    margin: 1em 1em 1em 1em;
+}
+.noteID{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+}
