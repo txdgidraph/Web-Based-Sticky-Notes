@@ -1,17 +1,83 @@
-.mainBody{
-    background-color: #243640;
+.mainBody {
+  background-color: #243640;
 }
-.wbstn-navbar{
-    background-color: white;
+.wbstn-navbar {
+  background-color: #353535;
 }
-.buttonCreate{
-    margin: 2 0 2 0;
+.buttonCreate {
+  margin: 2 0 2 0;
 }
-#notesBody{
-    margin: 1em 1em 1em 1em;
+#notesBody {
+  margin: 1em 1em 1em 1em;
 }
-.noteID{
-    background-color: yellow;
-    height: 150px;
-    width: 150px;
+.noteID {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.textAreaNote {
+  resize: none;
+}
+.textAreaNote:focus {
+  outline: none;
+}
+.saveBtn {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 25%;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.moveBtn{
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  margin-left: 25%;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.moveBtn:hover{
+  cursor: move;
+}
+.delBtn {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  margin-left: 50%;
+  width: 50%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.saveBtn:hover{
+  cursor: pointer;
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+.delBtn:hover{
+  cursor: pointer;
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+.testA{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+.testB{
+  cursor: move;
+}
+
+.alignBox{
+  height: 200px;
+  border-style: dotted;
+  border-color: white;
+  border-width: 1px 0px 1px 1px;
 }
