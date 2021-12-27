@@ -1,12 +1,11 @@
 function createNote() {
   designEmptyNote();
 }
-
+let a = 1;
 function designEmptyNote() {
   let div = document.createElement("div");
   div.setAttribute("class", "noteID");
-  let a = "id123"
-  div.setAttribute("id",a)
+  div.setAttribute("id", a);
   div.setAttribute("draggable", "true");
   div.setAttribute("ondragstart", "drag(event)");
 
@@ -36,6 +35,7 @@ function designEmptyNote() {
   div.appendChild(delBtn);
 
   document.getElementById("notesBody").appendChild(div);
+  a++;
 }
 
 function designAlignBox() {
@@ -54,15 +54,18 @@ function layoutAlignBoxes() {
 }
 layoutAlignBoxes();
 
+//======== DRAG AND DROP FUNCTIONALITY ============
 function drag(event) {
   event.dataTransfer.setData("text", event.target.id);
 }
-
 function allowDrop(event) {
   event.preventDefault();
 }
-
 function drop(event) {
   let data = event.dataTransfer.getData("text");
   event.target.appendChild(document.getElementById(data));
+  let testG = document.querySelector(".noteID");
+  testG.setAttribute('class','testingCCSS')
+  // let testM = document.getElementById("2");
+  // testM.setAttribute('class','testingCCSS')
 }
